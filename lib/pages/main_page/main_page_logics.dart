@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 import 'package:dio/dio.dart';
 import 'package:file_picker/file_picker.dart';
@@ -17,31 +18,37 @@ Future<String> pickFile(String selectFile, Function setState) async {
   return selectFile;
 }
 
-Future<int> sendMessage(
-  String message,
+Future<int> sendFile(
   String attachment,
 ) async {
-  print(0);
   MultipartFile multipartAttachment = await MultipartFile.fromFile(attachment);
-
-  print(0.5);
   final FormData formData = FormData.fromMap({
-    'message': message,
     'file': multipartAttachment,
   });
-
-  print(1);
 
   final response = await ApiProvider.request(ApiPaths.FILE_UPLOAD,
       data: formData, method: 'POST');
 
-  print('response.redirects: ${response.data}');
-
   final data = response.data;
-
-  print('data: $data');
-
 //TODO: ЕСЛИ ВСЁ ПЛОХО return 1;
 
   return 0;
+}
+
+Future<String> sendMessage(
+  String message,
+) async {
+  final response = await ApiProvider.request(ApiPaths.GET_REPORT,
+      data: jsonEncode({
+        'product': message,
+      }),
+      method: 'POST');
+
+  final data = response.data;
+  if (data.containsKey('Report')) {
+    final report = data['Report'];
+    return report;
+  }
+
+  return "Сервер не отвечает";
 }

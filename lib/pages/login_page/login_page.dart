@@ -23,10 +23,10 @@ class _LoginPageState extends State<LoginPage> {
         child: Form(
           key: formKey,
           child: Padding(
-            padding: EdgeInsets.all(margin),
+            padding: const EdgeInsets.all(margin),
             child: Center(
               child: Container(
-                constraints: BoxConstraints(minWidth: 100, maxWidth: 500),
+                constraints: const BoxConstraints(minWidth: 100, maxWidth: 500),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -35,11 +35,11 @@ class _LoginPageState extends State<LoginPage> {
                       'Авторизация',
                       style: headline1,
                     ),
-                    Icon(
+                    const Icon(
                       Icons.face,
                     ),
                     Container(
-                      padding: EdgeInsets.all(margin),
+                      padding: const EdgeInsets.all(margin),
                       decoration: BoxDecoration(
                           border: Border.all(color: borderColor),
                           borderRadius: highRad),
@@ -47,6 +47,7 @@ class _LoginPageState extends State<LoginPage> {
                         children: [
                           TextFormField(
                             controller: emailController,
+                            keyboardType: TextInputType.emailAddress,
                             decoration: const InputDecoration(
                                 hintText: 'Электронная почта'),
                             validator: (String? value) {
@@ -56,11 +57,12 @@ class _LoginPageState extends State<LoginPage> {
                               return 'Введите почту';
                             },
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: margin,
                           ),
                           TextFormField(
                             controller: passwordController,
+                            obscureText: true,
                             decoration:
                                 const InputDecoration(hintText: 'Пароль'),
                             validator: (String? value) {
@@ -70,7 +72,7 @@ class _LoginPageState extends State<LoginPage> {
                               return 'Введите пароль';
                             },
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: margin,
                           ),
                           ClassicButton(
@@ -84,7 +86,7 @@ class _LoginPageState extends State<LoginPage> {
                               }
                             },
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: margin,
                           ),
                           TextButton(
@@ -92,7 +94,7 @@ class _LoginPageState extends State<LoginPage> {
                                 navigatorKey.currentState!
                                     .pushNamed('/register_page');
                               },
-                              child: Text('Создать аккаунт'))
+                              child: const Text('Создать аккаунт'))
                         ],
                       ),
                     )

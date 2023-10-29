@@ -1,352 +1,136 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.dmisim.leader"
-4    android:versionCode="14"
-5    android:versionName="0.3.1" >
+3    package="com.example.hackaton3"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="19"
-8-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml
+8-->/Users/simagin/Documents/GitHub/hackhaton3/android/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="33" />
-9-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml
+9-->/Users/simagin/Documents/GitHub/hackhaton3/android/app/src/main/AndroidManifest.xml
 10
-11    <queries>
-11-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:3:5-14:15
-12
-13        <!-- If your app checks for SMS support -->
-14        <intent>
-14-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:5:9-8:18
-15            <action android:name="android.intent.action.VIEW" />
-15-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:6:13-65
-15-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:6:21-62
-16
-17            <data android:scheme="sms" />
-17-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:7:13-42
-17-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:7:19-39
-18        </intent>
-19        <!-- If your app checks for call support -->
-20        <intent>
-20-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:10:9-13:18
-21            <action android:name="android.intent.action.VIEW" />
-21-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:6:13-65
-21-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:6:21-62
-22
-23            <data android:scheme="tel" />
-23-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:7:13-42
-23-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:7:19-39
-24        </intent>
-25        <intent>
-25-->[:flutter_inappwebview] /Users/simagin/Documents/GitHub/lawyers/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-12:18
-26            <action android:name="android.support.customtabs.action.CustomTabsService" />
-26-->[:flutter_inappwebview] /Users/simagin/Documents/GitHub/lawyers/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-90
-26-->[:flutter_inappwebview] /Users/simagin/Documents/GitHub/lawyers/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:11:21-87
-27        </intent>
-28        <intent>
-28-->[:file_picker] /Users/simagin/Documents/GitHub/lawyers/build/file_picker/intermediates/merged_manifest/release/AndroidManifest.xml:12:9-16:18
-29            <action android:name="android.intent.action.GET_CONTENT" />
-29-->[:file_picker] /Users/simagin/Documents/GitHub/lawyers/build/file_picker/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-72
-29-->[:file_picker] /Users/simagin/Documents/GitHub/lawyers/build/file_picker/intermediates/merged_manifest/release/AndroidManifest.xml:13:21-69
-30
-31            <data android:mimeType="*/*" />
-31-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:7:13-42
-32        </intent>
-33    </queries>
-34
-35    <uses-permission android:name="android.permission.INTERNET" />
-35-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:15:5-67
-35-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:15:22-64
-36    <uses-permission
-36-->[:open_filex] /Users/simagin/Documents/GitHub/lawyers/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-12:38
-37        android:name="android.permission.READ_EXTERNAL_STORAGE"
-37-->[:open_filex] /Users/simagin/Documents/GitHub/lawyers/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:11:9-64
-38        android:maxSdkVersion="32" />
-38-->[:open_filex] /Users/simagin/Documents/GitHub/lawyers/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:12:9-35
-39    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
-39-->[:open_filex] /Users/simagin/Documents/GitHub/lawyers/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:13:5-76
-39-->[:open_filex] /Users/simagin/Documents/GitHub/lawyers/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:13:22-73
-40    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
-40-->[:open_filex] /Users/simagin/Documents/GitHub/lawyers/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:14:5-75
-40-->[:open_filex] /Users/simagin/Documents/GitHub/lawyers/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:14:22-72
-41    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
-41-->[:open_filex] /Users/simagin/Documents/GitHub/lawyers/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:15:5-75
-41-->[:open_filex] /Users/simagin/Documents/GitHub/lawyers/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:15:22-72
-42
-43    <permission
-43-->[androidx.core:core:1.10.1] /Users/simagin/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:22:5-24:47
-44        android:name="com.dmisim.leader.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-44-->[androidx.core:core:1.10.1] /Users/simagin/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:23:9-81
-45        android:protectionLevel="signature" />
-45-->[androidx.core:core:1.10.1] /Users/simagin/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:24:9-44
-46
-47    <uses-permission android:name="com.dmisim.leader.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-47-->[androidx.core:core:1.10.1] /Users/simagin/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:26:5-97
-47-->[androidx.core:core:1.10.1] /Users/simagin/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:26:22-94
-48
-49    <application
-50        android:name="android.app.Application"
-50-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:19:9-42
-51        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-51-->[androidx.core:core:1.10.1] /Users/simagin/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:28:18-86
-52        android:icon="@mipmap/ic_launcher"
-52-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:20:9-43
-53        android:label="Лидер"
-53-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:18:9-30
-54        android:requestLegacyExternalStorage="true" >
-54-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:17:9-52
-55        <activity
-55-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:21:9-41:20
-56            android:name="com.dmisim.leader.MainActivity"
-56-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:22:13-41
-57            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-57-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:26:13-163
-58            android:exported="true"
-58-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:23:13-36
-59            android:hardwareAccelerated="true"
-59-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:27:13-47
-60            android:launchMode="singleTop"
-60-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:24:13-43
-61            android:theme="@style/LaunchTheme"
-61-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:25:13-47
-62            android:windowSoftInputMode="adjustResize" >
-62-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:28:13-55
+11    <uses-permission
+11-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-12:38
+12        android:name="android.permission.READ_EXTERNAL_STORAGE"
+12-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:11:9-64
+13        android:maxSdkVersion="32" />
+13-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:12:9-35
+14    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+14-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:13:5-76
+14-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:13:22-73
+15    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+15-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:14:5-75
+15-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:14:22-72
+16    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+16-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:15:5-75
+16-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:15:22-72
+17
+18    <queries>
+18-->[:file_picker] /Users/simagin/Documents/GitHub/hackhaton3/build/file_picker/intermediates/merged_manifest/release/AndroidManifest.xml:11:5-17:15
+19        <intent>
+19-->[:file_picker] /Users/simagin/Documents/GitHub/hackhaton3/build/file_picker/intermediates/merged_manifest/release/AndroidManifest.xml:12:9-16:18
+20            <action android:name="android.intent.action.GET_CONTENT" />
+20-->[:file_picker] /Users/simagin/Documents/GitHub/hackhaton3/build/file_picker/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-72
+20-->[:file_picker] /Users/simagin/Documents/GitHub/hackhaton3/build/file_picker/intermediates/merged_manifest/release/AndroidManifest.xml:13:21-69
+21
+22            <data android:mimeType="*/*" />
+22-->[:file_picker] /Users/simagin/Documents/GitHub/hackhaton3/build/file_picker/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-44
+22-->[:file_picker] /Users/simagin/Documents/GitHub/hackhaton3/build/file_picker/intermediates/merged_manifest/release/AndroidManifest.xml:15:19-41
+23        </intent>
+24    </queries>
+25
+26    <application
+27        android:name="android.app.Application"
+27-->/Users/simagin/Documents/GitHub/hackhaton3/android/app/src/main/AndroidManifest.xml:4:9-42
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.6.0] /Users/simagin/.gradle/caches/transforms-3/7e9df2ac2213a6bd3cef0f2f27870d79/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+29        android:icon="@mipmap/ic_launcher"
+29-->/Users/simagin/Documents/GitHub/hackhaton3/android/app/src/main/AndroidManifest.xml:5:9-43
+30        android:label="hackaton3" >
+30-->/Users/simagin/Documents/GitHub/hackhaton3/android/app/src/main/AndroidManifest.xml:3:9-34
+31        <activity
+31-->/Users/simagin/Documents/GitHub/hackhaton3/android/app/src/main/AndroidManifest.xml:6:9-26:20
+32            android:name="com.example.hackaton3.MainActivity"
+32-->/Users/simagin/Documents/GitHub/hackhaton3/android/app/src/main/AndroidManifest.xml:7:13-41
+33            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+33-->/Users/simagin/Documents/GitHub/hackhaton3/android/app/src/main/AndroidManifest.xml:11:13-163
+34            android:exported="true"
+34-->/Users/simagin/Documents/GitHub/hackhaton3/android/app/src/main/AndroidManifest.xml:8:13-36
+35            android:hardwareAccelerated="true"
+35-->/Users/simagin/Documents/GitHub/hackhaton3/android/app/src/main/AndroidManifest.xml:12:13-47
+36            android:launchMode="singleTop"
+36-->/Users/simagin/Documents/GitHub/hackhaton3/android/app/src/main/AndroidManifest.xml:9:13-43
+37            android:theme="@style/LaunchTheme"
+37-->/Users/simagin/Documents/GitHub/hackhaton3/android/app/src/main/AndroidManifest.xml:10:13-47
+38            android:windowSoftInputMode="adjustResize" >
+38-->/Users/simagin/Documents/GitHub/hackhaton3/android/app/src/main/AndroidManifest.xml:13:13-55
+39
+40            <!--
+41                 Specifies an Android theme to apply to this Activity as soon as
+42                 the Android process has started. This theme is visible to the user
+43                 while the Flutter UI initializes. After that, this theme continues
+44                 to determine the Window background behind the Flutter UI.
+45            -->
+46            <meta-data
+46-->/Users/simagin/Documents/GitHub/hackhaton3/android/app/src/main/AndroidManifest.xml:18:13-21:17
+47                android:name="io.flutter.embedding.android.NormalTheme"
+47-->/Users/simagin/Documents/GitHub/hackhaton3/android/app/src/main/AndroidManifest.xml:19:15-70
+48                android:resource="@style/NormalTheme" />
+48-->/Users/simagin/Documents/GitHub/hackhaton3/android/app/src/main/AndroidManifest.xml:20:15-52
+49
+50            <intent-filter>
+50-->/Users/simagin/Documents/GitHub/hackhaton3/android/app/src/main/AndroidManifest.xml:22:13-25:29
+51                <action android:name="android.intent.action.MAIN" />
+51-->/Users/simagin/Documents/GitHub/hackhaton3/android/app/src/main/AndroidManifest.xml:23:17-68
+51-->/Users/simagin/Documents/GitHub/hackhaton3/android/app/src/main/AndroidManifest.xml:23:25-66
+52
+53                <category android:name="android.intent.category.LAUNCHER" />
+53-->/Users/simagin/Documents/GitHub/hackhaton3/android/app/src/main/AndroidManifest.xml:24:17-76
+53-->/Users/simagin/Documents/GitHub/hackhaton3/android/app/src/main/AndroidManifest.xml:24:27-74
+54            </intent-filter>
+55        </activity>
+56        <!--
+57             Don't delete the meta-data below.
+58             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+59        -->
+60        <meta-data
+60-->/Users/simagin/Documents/GitHub/hackhaton3/android/app/src/main/AndroidManifest.xml:29:9-31:33
+61            android:name="flutterEmbedding"
+61-->/Users/simagin/Documents/GitHub/hackhaton3/android/app/src/main/AndroidManifest.xml:30:13-44
+62            android:value="2" />
+62-->/Users/simagin/Documents/GitHub/hackhaton3/android/app/src/main/AndroidManifest.xml:31:13-30
 63
-64            <!--
-65                 Specifies an Android theme to apply to this Activity as soon as
-66                 the Android process has started. This theme is visible to the user
-67                 while the Flutter UI initializes. After that, this theme continues
-68                 to determine the Window background behind the Flutter UI.
-69            -->
-70            <meta-data
-70-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:33:13-36:17
-71                android:name="io.flutter.embedding.android.NormalTheme"
-71-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:34:15-70
-72                android:resource="@style/NormalTheme" />
-72-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:35:15-52
+64        <provider
+64-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:18:9-27:20
+65            android:name="com.crazecoder.openfile.FileProvider"
+65-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:19:13-64
+66            android:authorities="com.example.hackaton3.fileProvider.com.crazecoder.openfile"
+66-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:20:13-88
+67            android:exported="false"
+67-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:21:13-37
+68            android:grantUriPermissions="true" >
+68-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:22:13-47
+69            <meta-data
+69-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:24:13-26:53
+70                android:name="android.support.FILE_PROVIDER_PATHS"
+70-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:25:17-67
+71                android:resource="@xml/filepaths" />
+71-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:26:17-50
+72        </provider>
 73
-74            <intent-filter>
-74-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:37:13-40:29
-75                <action android:name="android.intent.action.MAIN" />
-75-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:38:17-68
-75-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:38:25-66
-76
-77                <category android:name="android.intent.category.LAUNCHER" />
-77-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:39:17-76
-77-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:39:27-74
-78            </intent-filter>
-79        </activity>
-80        <!--
-81             Don't delete the meta-data below.
-82             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-83        -->
-84        <meta-data
-84-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:44:9-46:33
-85            android:name="flutterEmbedding"
-85-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:45:13-44
-86            android:value="2" />
-86-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:46:13-30
-87
-88        <provider
-89            android:name="androidx.core.content.FileProvider"
-89-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:48:17-66
-90            android:authorities="com.dmisim.leader.fileProvider"
-90-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:49:17-68
-91            android:exported="false"
-91-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:50:17-41
-92            android:grantUriPermissions="true" >
-92-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:51:17-51
-93            <meta-data
-93-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:53:13-56:56
-94                android:name="android.support.FILE_PROVIDER_PATHS"
-94-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:54:21-71
-95                android:resource="@xml/filepaths" />
-95-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:55:21-54
-96        </provider>
-97        <provider
-97-->[:open_filex] /Users/simagin/Documents/GitHub/lawyers/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:18:9-27:20
-98            android:name="com.crazecoder.openfile.FileProvider"
-98-->[:open_filex] /Users/simagin/Documents/GitHub/lawyers/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:19:13-64
-99            android:authorities="com.dmisim.leader.fileProvider.com.crazecoder.openfile"
-99-->[:open_filex] /Users/simagin/Documents/GitHub/lawyers/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:20:13-88
-100            android:exported="false"
-100-->[:open_filex] /Users/simagin/Documents/GitHub/lawyers/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:21:13-37
-101            android:grantUriPermissions="true" >
-101-->[:open_filex] /Users/simagin/Documents/GitHub/lawyers/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:22:13-47
-102            <meta-data
-102-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:53:13-56:56
-103                android:name="android.support.FILE_PROVIDER_PATHS"
-103-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:54:21-71
-104                android:resource="@xml/filepaths" />
-104-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:55:21-54
-105        </provider>
-106
-107        <activity
-107-->[:flutter_inappwebview] /Users/simagin/Documents/GitHub/lawyers/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:16:9-20:47
-108            android:name="com.pichillilorenzo.flutter_inappwebview.in_app_browser.InAppBrowserActivity"
-108-->[:flutter_inappwebview] /Users/simagin/Documents/GitHub/lawyers/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-104
-109            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density"
-109-->[:flutter_inappwebview] /Users/simagin/Documents/GitHub/lawyers/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-137
-110            android:exported="false"
-110-->[:flutter_inappwebview] /Users/simagin/Documents/GitHub/lawyers/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:19:13-37
-111            android:theme="@style/AppTheme" />
-111-->[:flutter_inappwebview] /Users/simagin/Documents/GitHub/lawyers/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:20:13-44
-112        <activity
-112-->[:flutter_inappwebview] /Users/simagin/Documents/GitHub/lawyers/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:21:9-24:55
-113            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivity"
-113-->[:flutter_inappwebview] /Users/simagin/Documents/GitHub/lawyers/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:22:13-112
-114            android:exported="false"
-114-->[:flutter_inappwebview] /Users/simagin/Documents/GitHub/lawyers/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:23:13-37
-115            android:theme="@style/ThemeTransparent" />
-115-->[:flutter_inappwebview] /Users/simagin/Documents/GitHub/lawyers/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:24:13-52
-116        <activity
-116-->[:flutter_inappwebview] /Users/simagin/Documents/GitHub/lawyers/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:25:9-28:55
-117            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivity"
-117-->[:flutter_inappwebview] /Users/simagin/Documents/GitHub/lawyers/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:26:13-106
-118            android:exported="false"
-118-->[:flutter_inappwebview] /Users/simagin/Documents/GitHub/lawyers/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-37
-119            android:theme="@style/ThemeTransparent" />
-119-->[:flutter_inappwebview] /Users/simagin/Documents/GitHub/lawyers/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:28:13-52
-120        <activity
-120-->[:flutter_inappwebview] /Users/simagin/Documents/GitHub/lawyers/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:29:9-33:55
-121            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivitySingleInstance"
-121-->[:flutter_inappwebview] /Users/simagin/Documents/GitHub/lawyers/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:30:13-126
-122            android:exported="false"
-122-->[:flutter_inappwebview] /Users/simagin/Documents/GitHub/lawyers/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:31:13-37
-123            android:launchMode="singleInstance"
-123-->[:flutter_inappwebview] /Users/simagin/Documents/GitHub/lawyers/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:32:13-48
-124            android:theme="@style/ThemeTransparent" />
-124-->[:flutter_inappwebview] /Users/simagin/Documents/GitHub/lawyers/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:33:13-52
-125        <activity
-125-->[:flutter_inappwebview] /Users/simagin/Documents/GitHub/lawyers/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:34:9-38:55
-126            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivitySingleInstance"
-126-->[:flutter_inappwebview] /Users/simagin/Documents/GitHub/lawyers/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:35:13-120
-127            android:exported="false"
-127-->[:flutter_inappwebview] /Users/simagin/Documents/GitHub/lawyers/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:36:13-37
-128            android:launchMode="singleInstance"
-128-->[:flutter_inappwebview] /Users/simagin/Documents/GitHub/lawyers/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:37:13-48
-129            android:theme="@style/ThemeTransparent" />
-129-->[:flutter_inappwebview] /Users/simagin/Documents/GitHub/lawyers/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:38:13-52
-130
-131        <receiver
-131-->[:flutter_inappwebview] /Users/simagin/Documents/GitHub/lawyers/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:40:9-43:40
-132            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ActionBroadcastReceiver"
-132-->[:flutter_inappwebview] /Users/simagin/Documents/GitHub/lawyers/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:41:13-111
-133            android:enabled="true"
-133-->[:flutter_inappwebview] /Users/simagin/Documents/GitHub/lawyers/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:42:13-35
-134            android:exported="false" />
-134-->[:flutter_inappwebview] /Users/simagin/Documents/GitHub/lawyers/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:43:13-37
-135
-136        <meta-data
-136-->[:flutter_inappwebview] /Users/simagin/Documents/GitHub/lawyers/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:45:9-47:36
-137            android:name="io.flutter.embedded_views_preview"
-137-->[:flutter_inappwebview] /Users/simagin/Documents/GitHub/lawyers/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:46:13-61
-138            android:value="true" />
-138-->[:flutter_inappwebview] /Users/simagin/Documents/GitHub/lawyers/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:47:13-33
-139
-140        <provider
-140-->[:image_picker_android] /Users/simagin/Documents/GitHub/lawyers/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-18:20
-141            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-141-->[:image_picker_android] /Users/simagin/Documents/GitHub/lawyers/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-82
-142            android:authorities="com.dmisim.leader.flutter.image_provider"
-142-->[:image_picker_android] /Users/simagin/Documents/GitHub/lawyers/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-74
-143            android:exported="false"
-143-->[:image_picker_android] /Users/simagin/Documents/GitHub/lawyers/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-37
-144            android:grantUriPermissions="true" >
-144-->[:image_picker_android] /Users/simagin/Documents/GitHub/lawyers/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-47
-145            <meta-data
-145-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:53:13-56:56
-146                android:name="android.support.FILE_PROVIDER_PATHS"
-146-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:54:21-71
-147                android:resource="@xml/flutter_image_picker_file_paths" />
-147-->/Users/simagin/Documents/GitHub/lawyers/android/app/src/main/AndroidManifest.xml:55:21-54
-148        </provider>
-149
-150        <activity
-150-->[:url_launcher_android] /Users/simagin/Documents/GitHub/lawyers/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-13:74
-151            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
-151-->[:url_launcher_android] /Users/simagin/Documents/GitHub/lawyers/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-74
-152            android:exported="false"
-152-->[:url_launcher_android] /Users/simagin/Documents/GitHub/lawyers/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-37
-153            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-153-->[:url_launcher_android] /Users/simagin/Documents/GitHub/lawyers/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-71
-154
-155        <provider
-155-->[androidx.emoji2:emoji2:1.2.0] /Users/simagin/.gradle/caches/transforms-3/e04bc3769bedd8dd6f8ca688986b0355/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-156            android:name="androidx.startup.InitializationProvider"
-156-->[androidx.emoji2:emoji2:1.2.0] /Users/simagin/.gradle/caches/transforms-3/e04bc3769bedd8dd6f8ca688986b0355/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
-157            android:authorities="com.dmisim.leader.androidx-startup"
-157-->[androidx.emoji2:emoji2:1.2.0] /Users/simagin/.gradle/caches/transforms-3/e04bc3769bedd8dd6f8ca688986b0355/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
-158            android:exported="false" >
-158-->[androidx.emoji2:emoji2:1.2.0] /Users/simagin/.gradle/caches/transforms-3/e04bc3769bedd8dd6f8ca688986b0355/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
-159            <meta-data
-159-->[androidx.emoji2:emoji2:1.2.0] /Users/simagin/.gradle/caches/transforms-3/e04bc3769bedd8dd6f8ca688986b0355/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-160                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-160-->[androidx.emoji2:emoji2:1.2.0] /Users/simagin/.gradle/caches/transforms-3/e04bc3769bedd8dd6f8ca688986b0355/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
-161                android:value="androidx.startup" />
-161-->[androidx.emoji2:emoji2:1.2.0] /Users/simagin/.gradle/caches/transforms-3/e04bc3769bedd8dd6f8ca688986b0355/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
-162            <meta-data
-162-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/simagin/.gradle/caches/transforms-3/34e3313412f6bb2343705c93422b49a8/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
-163                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-163-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/simagin/.gradle/caches/transforms-3/34e3313412f6bb2343705c93422b49a8/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
-164                android:value="androidx.startup" />
-164-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/simagin/.gradle/caches/transforms-3/34e3313412f6bb2343705c93422b49a8/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
-165            <meta-data
-165-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
-166                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-166-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
-167                android:value="androidx.startup" />
-167-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
-168        </provider>
-169
-170        <uses-library
-170-->[androidx.window:window:1.0.0-beta04] /Users/simagin/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
-171            android:name="androidx.window.extensions"
-171-->[androidx.window:window:1.0.0-beta04] /Users/simagin/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
-172            android:required="false" />
-172-->[androidx.window:window:1.0.0-beta04] /Users/simagin/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
-173        <uses-library
-173-->[androidx.window:window:1.0.0-beta04] /Users/simagin/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
-174            android:name="androidx.window.sidecar"
-174-->[androidx.window:window:1.0.0-beta04] /Users/simagin/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
-175            android:required="false" />
-175-->[androidx.window:window:1.0.0-beta04] /Users/simagin/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
-176
-177        <receiver
-177-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
-178            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-178-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
-179            android:directBootAware="false"
-179-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
-180            android:enabled="true"
-180-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
-181            android:exported="true"
-181-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
-182            android:permission="android.permission.DUMP" >
-182-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
-183            <intent-filter>
-183-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
-184                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-184-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
-184-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
-185            </intent-filter>
-186            <intent-filter>
-186-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
-187                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-187-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
-187-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
-188            </intent-filter>
-189            <intent-filter>
-189-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
-190                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-190-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
-190-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
-191            </intent-filter>
-192            <intent-filter>
-192-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
-193                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-193-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
-193-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
-194            </intent-filter>
-195        </receiver>
-196    </application>
-197
-198</manifest>
+74        <uses-library
+74-->[androidx.window:window:1.0.0-beta04] /Users/simagin/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+75            android:name="androidx.window.extensions"
+75-->[androidx.window:window:1.0.0-beta04] /Users/simagin/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+76            android:required="false" />
+76-->[androidx.window:window:1.0.0-beta04] /Users/simagin/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+77        <uses-library
+77-->[androidx.window:window:1.0.0-beta04] /Users/simagin/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+78            android:name="androidx.window.sidecar"
+78-->[androidx.window:window:1.0.0-beta04] /Users/simagin/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+79            android:required="false" />
+79-->[androidx.window:window:1.0.0-beta04] /Users/simagin/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+80    </application>
+81
+82</manifest>

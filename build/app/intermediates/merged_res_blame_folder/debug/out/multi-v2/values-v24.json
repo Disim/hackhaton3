@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.hackaton3.app-mergeDebugResources-22:/values-v24/values-v24.xml",
+            "outputFile": "com.example.hackaton3.app-mergeDebugResources-11:/values-v24/values-v24.xml",
             "map": [
                 {
                     "source": "/Users/simagin/.gradle/caches/transforms-3/d9fefd3231d7c549dee86f94a8a71d09/transformed/media-1.0.0/res/values-v24/values-v24.xml",

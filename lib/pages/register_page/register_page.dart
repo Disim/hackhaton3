@@ -27,7 +27,7 @@ class _RegisterPageState extends State<RegisterPage> {
             padding: const EdgeInsets.all(margin),
             child: Center(
               child: Container(
-                constraints: BoxConstraints(minWidth: 100, maxWidth: 500),
+                constraints: const BoxConstraints(minWidth: 100, maxWidth: 500),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -37,7 +37,7 @@ class _RegisterPageState extends State<RegisterPage> {
                         style: headline1,
                       ),
                     ),
-                    Icon(Icons.create_outlined),
+                    const Icon(Icons.create_outlined),
                     Column(
                       children: [
                         TextFormField(
@@ -51,11 +51,12 @@ class _RegisterPageState extends State<RegisterPage> {
                             return 'Введите название';
                           },
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: margin,
                         ),
                         TextFormField(
                           controller: emailController,
+                          keyboardType: TextInputType.emailAddress,
                           decoration: const InputDecoration(
                               hintText: 'Электронная почта'),
                           validator: (String? value) {
@@ -65,10 +66,11 @@ class _RegisterPageState extends State<RegisterPage> {
                             return 'Введите почту';
                           },
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: margin,
                         ),
                         TextFormField(
+                          obscureText: true,
                           controller: passwordController,
                           decoration: const InputDecoration(hintText: 'Пароль'),
                           validator: (String? value) {
@@ -78,22 +80,31 @@ class _RegisterPageState extends State<RegisterPage> {
                             return 'Введите пароль';
                           },
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: margin,
                         ),
                         TextFormField(
-                          controller: passwordController,
+                          obscureText: true,
+                          controller: repeatPasswordController,
                           decoration: const InputDecoration(
                               hintText: 'Подтвердите пароль'),
                           validator: (String? value) {
                             //TODO: Проверять на совпадение
                             if (passwordController.text.isNotEmpty) {
-                              return null;
+                              if (passwordController.text == value) {
+                                return null;
+                              }
+                              return 'Пароли должны совпадать';
                             }
                             return 'Введите пароль ещё раз';
                           },
                         ),
-                        SizedBox(
+                        const SizedBox(
+                          height: margin,
+                        ),
+                        const Text(
+                            'После нажатия кнопки "Регистрация" проверьте электронную почту для подтверждения аккаунта'),
+                        const SizedBox(
                           height: margin,
                         ),
                         ClassicButton('Регистрация', () {

@@ -21,7 +21,7 @@ class ApiProvider {
         method: 'POST',
       );
 
-      print(request.data);
+      print('Req ${request.data}');
 
       // TokenManager.setTokens(accessToken, refreshToken)
       organization = Organization.fromJson(request.data);

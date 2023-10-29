@@ -4,7 +4,7 @@
     "type": "COMPATIBLE_SCREEN_MANIFEST",
     "kind": "Directory"
   },
-  "applicationId": "com.dmisim.leader",
+  "applicationId": "com.example.hackaton3",
   "variantName": "release",
   "elements": []
 }

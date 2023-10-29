@@ -1,11 +1,11 @@
 <lint-module
     format="1"
-    dir="/Users/simagin/Documents/GitHub/lawyers/android/app"
+    dir="/Users/simagin/Documents/GitHub/hackhaton3/android/app"
     name=":app"
     type="APP"
     maven="android:app:"
     gradle="7.3.0"
-    buildFolder="/Users/simagin/Documents/GitHub/lawyers/build/app"
+    buildFolder="/Users/simagin/Documents/GitHub/hackhaton3/build/app"
     bootClassPath="/Users/simagin/Library/Android/sdk/platforms/android-33/android.jar:/Users/simagin/Library/Android/sdk/build-tools/30.0.3/core-lambda-stubs.jar"
     javaSourceLevel="1.8"
     compileTarget="android-33">

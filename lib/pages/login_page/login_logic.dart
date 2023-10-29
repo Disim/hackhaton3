@@ -6,9 +6,10 @@ loginButton(String email, String password) async {
   Organization organization =
       Organization(name: '', email: email, password: password);
   final result = await ApiProvider.login(organization);
-  print(result.email);
+  print(result.name);
 
-  if (result.email != '') {
+  if (result.name != '') {
+    print(result.email);
     navigatorKey.currentState!
         .pushNamedAndRemoveUntil('/main_page', (route) => false);
   }

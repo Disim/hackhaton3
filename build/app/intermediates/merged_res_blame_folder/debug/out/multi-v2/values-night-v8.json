@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.hackaton3.app-mergeDebugResources-22:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.example.hackaton3.app-mergeDebugResources-11:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "/Users/simagin/Documents/GitHub/hackhaton3/android/app/src/main/res/values-night/styles.xml",

@@ -45,158 +45,76 @@
 28        </intent>
 29    </queries>
 30
-31    <permission
-31-->[androidx.core:core:1.10.1] /Users/simagin/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:22:5-24:47
-32        android:name="com.example.hackaton3.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-32-->[androidx.core:core:1.10.1] /Users/simagin/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:23:9-81
-33        android:protectionLevel="signature" />
-33-->[androidx.core:core:1.10.1] /Users/simagin/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:24:9-44
-34
-35    <uses-permission android:name="com.example.hackaton3.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-35-->[androidx.core:core:1.10.1] /Users/simagin/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:26:5-97
-35-->[androidx.core:core:1.10.1] /Users/simagin/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:26:22-94
-36
-37    <application
-38        android:name="android.app.Application"
-39        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-39-->[androidx.core:core:1.10.1] /Users/simagin/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:28:18-86
-40        android:debuggable="true"
-41        android:icon="@mipmap/ic_launcher"
-42        android:label="hackaton3" >
-43        <activity
-44            android:name="com.example.hackaton3.MainActivity"
-45            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-46            android:exported="true"
-47            android:hardwareAccelerated="true"
-48            android:launchMode="singleTop"
-49            android:theme="@style/LaunchTheme"
-50            android:windowSoftInputMode="adjustResize" >
-51
-52            <!--
-53                 Specifies an Android theme to apply to this Activity as soon as
-54                 the Android process has started. This theme is visible to the user
-55                 while the Flutter UI initializes. After that, this theme continues
-56                 to determine the Window background behind the Flutter UI.
-57            -->
-58            <meta-data
-59                android:name="io.flutter.embedding.android.NormalTheme"
-60                android:resource="@style/NormalTheme" />
-61
-62            <intent-filter>
-63                <action android:name="android.intent.action.MAIN" />
-64
-65                <category android:name="android.intent.category.LAUNCHER" />
-66            </intent-filter>
-67        </activity>
-68        <!--
-69             Don't delete the meta-data below.
-70             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-71        -->
-72        <meta-data
-73            android:name="flutterEmbedding"
-74            android:value="2" />
-75
-76        <provider
-76-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-27:20
-77            android:name="com.crazecoder.openfile.FileProvider"
-77-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-64
-78            android:authorities="com.example.hackaton3.fileProvider.com.crazecoder.openfile"
-78-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-88
-79            android:exported="false"
-79-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-37
-80            android:grantUriPermissions="true" >
-80-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-47
-81            <meta-data
-81-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-26:53
-82                android:name="android.support.FILE_PROVIDER_PATHS"
-82-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/debug/AndroidManifest.xml:25:17-67
-83                android:resource="@xml/filepaths" />
-83-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/debug/AndroidManifest.xml:26:17-50
-84        </provider>
-85        <provider
-85-->[:image_picker_android] /Users/simagin/Documents/GitHub/hackhaton3/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
-86            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-86-->[:image_picker_android] /Users/simagin/Documents/GitHub/hackhaton3/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-82
-87            android:authorities="com.example.hackaton3.flutter.image_provider"
-87-->[:image_picker_android] /Users/simagin/Documents/GitHub/hackhaton3/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-74
-88            android:exported="false"
-88-->[:image_picker_android] /Users/simagin/Documents/GitHub/hackhaton3/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
-89            android:grantUriPermissions="true" >
-89-->[:image_picker_android] /Users/simagin/Documents/GitHub/hackhaton3/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
-90            <meta-data
-90-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-26:53
-91                android:name="android.support.FILE_PROVIDER_PATHS"
-91-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/debug/AndroidManifest.xml:25:17-67
-92                android:resource="@xml/flutter_image_picker_file_paths" />
-92-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/debug/AndroidManifest.xml:26:17-50
-93        </provider>
-94
-95        <uses-library
-95-->[androidx.window:window:1.0.0-beta04] /Users/simagin/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
-96            android:name="androidx.window.extensions"
-96-->[androidx.window:window:1.0.0-beta04] /Users/simagin/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
-97            android:required="false" />
-97-->[androidx.window:window:1.0.0-beta04] /Users/simagin/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
-98        <uses-library
-98-->[androidx.window:window:1.0.0-beta04] /Users/simagin/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
-99            android:name="androidx.window.sidecar"
-99-->[androidx.window:window:1.0.0-beta04] /Users/simagin/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
-100            android:required="false" />
-100-->[androidx.window:window:1.0.0-beta04] /Users/simagin/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
-101
-102        <provider
-102-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
-103            android:name="androidx.startup.InitializationProvider"
-103-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:25:13-67
-104            android:authorities="com.example.hackaton3.androidx-startup"
-104-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:26:13-68
-105            android:exported="false" >
-105-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:27:13-37
-106            <meta-data
-106-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
-107                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-107-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
-108                android:value="androidx.startup" />
-108-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
-109        </provider>
-110
-111        <receiver
-111-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
-112            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-112-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
-113            android:directBootAware="false"
-113-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
-114            android:enabled="true"
-114-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
-115            android:exported="true"
-115-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
-116            android:permission="android.permission.DUMP" >
-116-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
-117            <intent-filter>
-117-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
-118                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-118-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
-118-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
-119            </intent-filter>
-120            <intent-filter>
-120-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
-121                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-121-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
-121-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
-122            </intent-filter>
-123            <intent-filter>
-123-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
-124                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-124-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
-124-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
-125            </intent-filter>
-126            <intent-filter>
-126-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
-127                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-127-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
-127-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/simagin/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
-128            </intent-filter>
-129        </receiver>
-130    </application>
-131
-132</manifest>
+31    <application
+32        android:name="android.app.Application"
+33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+33-->[androidx.core:core:1.6.0] /Users/simagin/.gradle/caches/transforms-3/7e9df2ac2213a6bd3cef0f2f27870d79/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+34        android:debuggable="true"
+35        android:icon="@mipmap/ic_launcher"
+36        android:label="hackaton3" >
+37        <activity
+38            android:name="com.example.hackaton3.MainActivity"
+39            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+40            android:exported="true"
+41            android:hardwareAccelerated="true"
+42            android:launchMode="singleTop"
+43            android:theme="@style/LaunchTheme"
+44            android:windowSoftInputMode="adjustResize" >
+45
+46            <!--
+47                 Specifies an Android theme to apply to this Activity as soon as
+48                 the Android process has started. This theme is visible to the user
+49                 while the Flutter UI initializes. After that, this theme continues
+50                 to determine the Window background behind the Flutter UI.
+51            -->
+52            <meta-data
+53                android:name="io.flutter.embedding.android.NormalTheme"
+54                android:resource="@style/NormalTheme" />
+55
+56            <intent-filter>
+57                <action android:name="android.intent.action.MAIN" />
+58
+59                <category android:name="android.intent.category.LAUNCHER" />
+60            </intent-filter>
+61        </activity>
+62        <!--
+63             Don't delete the meta-data below.
+64             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+65        -->
+66        <meta-data
+67            android:name="flutterEmbedding"
+68            android:value="2" />
+69
+70        <provider
+70-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-27:20
+71            android:name="com.crazecoder.openfile.FileProvider"
+71-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-64
+72            android:authorities="com.example.hackaton3.fileProvider.com.crazecoder.openfile"
+72-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-88
+73            android:exported="false"
+73-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-37
+74            android:grantUriPermissions="true" >
+74-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-47
+75            <meta-data
+75-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-26:53
+76                android:name="android.support.FILE_PROVIDER_PATHS"
+76-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/debug/AndroidManifest.xml:25:17-67
+77                android:resource="@xml/filepaths" />
+77-->[:open_filex] /Users/simagin/Documents/GitHub/hackhaton3/build/open_filex/intermediates/merged_manifest/debug/AndroidManifest.xml:26:17-50
+78        </provider>
+79
+80        <uses-library
+80-->[androidx.window:window:1.0.0-beta04] /Users/simagin/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+81            android:name="androidx.window.extensions"
+81-->[androidx.window:window:1.0.0-beta04] /Users/simagin/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+82            android:required="false" />
+82-->[androidx.window:window:1.0.0-beta04] /Users/simagin/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+83        <uses-library
+83-->[androidx.window:window:1.0.0-beta04] /Users/simagin/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+84            android:name="androidx.window.sidecar"
+84-->[androidx.window:window:1.0.0-beta04] /Users/simagin/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+85            android:required="false" />
+85-->[androidx.window:window:1.0.0-beta04] /Users/simagin/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+86    </application>
+87
+88</manifest>
